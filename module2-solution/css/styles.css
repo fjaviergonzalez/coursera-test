@@ -5,6 +5,7 @@
   padding: 0;   /*Elimina paddings que aplica el navegador por defecto*/
 }
 h1 {
+  margin-top: 15px;
   margin-bottom: 15px;
   text-align: center;
   font-family: Helvetica;
@@ -21,7 +22,7 @@ h2 {
   position: absolute;    /*Se declara como posición absoluta para poder ubicarlo a la derecha arriba*/
   top: 0;                /*Coloca el título de la sección en la esquina derecha arriba*/
   right: 0;
-  margin-right: 10px;    /*Contrarresto la separación entre secciones que desplazaba el título fuera de la sección*/
+  margin-right: 30px;    /*Contrarresto la separación entre secciones que desplazaba el título fuera de la sección*/
   font-family: Helvetica;
   font-weight: bold; 
  
@@ -29,8 +30,8 @@ h2 {
 
 #contenedor{
 	position: relative;     /*El contenedor se especifica como relativo y sus elementos interiores serán absolutos*/
-  padding-right: 10px;    /*Espacio entre sección y sección. Será del mismo tamaño que el margin-right de h2*/
-  padding-bottom: 15px;   /*Espacio por debajo cuando se apilan las secciones una encima de otra*/
+  padding-right: 30px;    /*Espacio entre sección y sección. Será del mismo tamaño que el margin-right de h2*/
+  padding-bottom: 30px;   /*Espacio por debajo cuando se apilan las secciones una encima de otra*/
 
 }
 
@@ -71,7 +72,7 @@ p {
   width: 100%;                
   /*Separación a la izquierda del borde del navegador.*/
   /*No hace falta padding-right: ya tenemos el padding-right de la sección más a la derecha, del mismo tamaño que padding-left.*/
-  padding-left: 10px;       
+  padding-left: 30px;       
 }                             
 
 
