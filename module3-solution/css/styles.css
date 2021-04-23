@@ -6,6 +6,7 @@
 
 h2{	/*Our Menu*/
 	font-family: 'Lato', sans-serif;
+	margin-top: 30px;
 	margin-bottom: 50px;
 }
 
@@ -16,31 +17,31 @@ h2{	/*Our Menu*/
 
 .container{
 	height: 100px;
-	background-color: #413c69;
+	background-color: #413c69; /*color de fondo del header*/
 	width: 100%;
 }
 
-.navar-brand{
-	padding-top: 25px;
-
+.navbar-brand{
+	padding-top: 10px;
 }
 
 .navbar-brand h1{  /*FOOD, LLC*/
 	font-size: 1.8em;
-	padding-left: 10px;
+	margin-left: 70px;
 	font-family: 'Lato', sans-serif;
 	color: white;
+	text-shadow: 2px 2px 4px #000000;
 }
+
 
 .container-fluid{
 	height: 100%;
 	background-color: #a7c5eb;
-	/*background-color: #a7c5eb;*/
 	margin-right: 20px;
 	margin-left: 20px;
 	margin-bottom: 20px;
 	padding-bottom: 20px;
-
+	box-shadow: 0 0 10px #413c69;
 }
 
 section{
@@ -55,8 +56,7 @@ section h3{
 
 section p{
 	font-family: 'Roboto', sans-serif;
-	/*font-weight: bold;*/
-	font-size: 1.3em;
+	font-size: 1.4em;
 
 }
 
@@ -69,64 +69,76 @@ button.navbar-toggle {
 
 /********** Medium devices only **********/
 @media (min-width: 992px) and (max-width: 1199px) {
- .navbar-brand h1{  /*FOOD, LLC*/
-	font-size: 1.8em;
-	padding-left: 10px;
- }
 
- 
 }
 
 /********** Small devices only **********/
 @media (min-width: 768px) and (max-width: 991px) {
- .navbar-brand h1{  /*FOOD, LLC*/
-	font-size: 1.6em;
- }
 
+ section p{
+	font-size: 1.3em;
+ }
 }
 
 /********** Extra small devices only **********/
 @media (max-width: 767px) {
 
-
-  .container{
-  	padding: 0;
-	height: 100px;
+  h2{	/*Our Menu*/
+	font-family: 'Lato', sans-serif;
+	margin-top: 50px;
   }
+
   .navbar-brand {
-    padding-top: 10px;
-    height: 80px;
+    height: 90px;
   }
-  
 
-  #collapsable-nav{
+  .navbar-brand h1{  /*FOOD, LLC*/
+	font-size: 2em;
+	margin-left: 20px;
+  }
+
+
+   #nav-list a:hover { /*Añade sombra a cada item del menu desplegable y cambia el color de fondo al pasar el ratón por encima*/
+  	background: #709fb0;
+  	text-shadow: 2px 2px 4px #000000;
+  }
+
+  
+  #collapsable-nav{ /*Pequeño arreglo para evitar un espacio en blanco entre el header y el menú desplegado*/
+  	margin-top: -10px; /*Hace el tamaño del espacio en blanco casi inapreciable*/
   	padding-top: 0px;
+  	/*margin-bottom: 0px;
+  	padding-bottom: 0px;*/
+  	border-top: 1px solid #413c69; /*Un borde del mismo color que el fondo del header para disimular el espacio en blanco*/
+  	
   }
 
   #collapsable-nav a { /* Collapsed nav menu text */
   	font-family: 'Lato', sans-serif;
-   	font-size: 1.3em;
+   	font-size: 1.5em;
     background-color: #4a47a3;
     /*background-color: #709fb0;*/
     color: #fff;
-    border: 1px solid #709fb0;
+    margin-bottom: 0px;
     padding-bottom: 25px;
+    padding-top: 25px;
+    border-bottom: 1px solid #000; /*negro*/
+	border-top: 1px solid #666; /*gris*/
   }
   
-.icon-bar{
-	/*color: #4a47a3;*/
-}
+  section{
+	margin-left: 10px;
+	margin-right: 10px ;
+  }
 
-section{
-	margin-left: 25px;
-	margin-right: 25px ;
-}
+  section p{
+	font-size: 1.2em;
+  }
 
-.container-fluid{
-	margin-right: 50px;
-	margin-left: 50px;
-}
-  
+  .container-fluid{
+	margin-right: 45px;
+	margin-left: 45px;
+  }
 }
  
   
